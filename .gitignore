@@ -1,0 +1,11 @@
+# Lib files
+node_modules
+
+# nodejs
+server.js
+
+# json files
+*.json
+
+# workspace files
+*.code-workspace

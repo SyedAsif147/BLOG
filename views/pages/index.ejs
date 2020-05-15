@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+
+<% if (typeof blogs != 'undefined') { %>
+
+<% for(let i=0; i<blogs.length;i++) { %>
+
+  <h3 style="margin-left: 10px;"> <a href="/feed/<%= blogs[i].blog_id %>"><%= blogs[i].title %> </a> </h3>
+  <h5 style="margin-left: 10px;">Written by <%= blogs[i].author %></h5>
+
+  <hr>
+<% } %> 
+
+<%} else { %>
+<p> No posts have been written yet. </p>
+<% } %>
+
+<% include ../partials/footer %>
