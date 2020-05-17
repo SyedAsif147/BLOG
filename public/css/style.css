@@ -1,0 +1,39 @@
+body {
+    margin-top: 0px !important;
+}
+.color1 {
+    background-color: #f7cac9 !important;
+    margin-bottom: 0px;
+    /* border-bottom: .2px solid black; */
+    transition: 0.5s;
+    border-radius: 0px !important;
+}
+.color2 {
+    background-color: #f7cac9 !important;
+    margin-bottom: 0px;
+    /* border-bottom: .2px solid black; */
+    transition: 0.5s;
+    border-radius: 0px !important;
+}
+.text-dark-new {
+    color: black !important;
+    text-decoration: none !important;
+    margin: 40px 0px 40px 10px !important;
+}
+.card-jumbo1:hover {
+    transition: 0.5s !important;
+    background-color: #fd312ebd !important;
+    border-radius: 50px !important;
+}
+.card-jumbo2:hover {
+    transition: 0.5s !important;
+    background-color: #fd312ebd !important;
+    border-radius: 50px !important;
+}
+.container-fluid {
+    padding: 15px !important;
+    font-size: 17px !important;
+}
+.jumbo-edit {
+    padding: 80px;
+}

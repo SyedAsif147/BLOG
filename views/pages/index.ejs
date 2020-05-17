@@ -3,11 +3,19 @@
 <% if (typeof blogs != 'undefined') { %>
 
 <% for(let i=0; i<blogs.length;i++) { %>
-
-  <h3 style="margin-left: 10px;"> <a href="/feed/<%= blogs[i].blog_id %>"><%= blogs[i].title %> </a> </h3>
-  <h5 style="margin-left: 10px;">Written by <%= blogs[i].author %></h5>
-
-  <hr>
+<% if (i%2==0) {%>   
+<div class="container">
+<div class="jumbotron color1 card-jumbo1 jumbo-edit">
+  <h2 style="margin-left: 10px;" class="text-dark-new"> <a href="/feed/<%= blogs[i].blog_id %>" class="text-dark-new"><%= blogs[i].title %> </a> </h2>
+  <h5 style="margin-left: 10px; font-size: medium;">Written by <%= blogs[i].author %></h5>
+</div>
+<% } else { %>
+<div class="jumbotron color2 card-jumbo2 jumbo-edit">
+  <h2 style="margin-left: 10px;" class="text-dark-new"> <a href="/feed/<%= blogs[i].blog_id %>" class="text-dark-new"><%= blogs[i].title %> </a> </h2>
+  <h5 style="margin-left: 10px; font-size: medium;">Written by <%= blogs[i].author %></h5>
+</div>
+</div>
+<% } %> 
 <% } %> 
 
 <%} else { %>
