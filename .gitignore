@@ -5,7 +5,8 @@ node_modules
 server.js
 
 # json files
-*.json
+package.json
+package-lock.json
 
 # workspace files
 *.code-workspace
