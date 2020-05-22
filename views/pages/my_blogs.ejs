@@ -4,7 +4,7 @@
     <table cellpadding="5" >
     <% for(let i=0; i<blogs.length;i++) { %>
       <tr>
-        <td style="padding:0 15px;"> <h3> <a href="/blogs/<%= blogs[i].blog_id %>"><%= blogs[i].title %> </a> </h3></td>
+        <td style="padding:0 15px;"> <h3> <a href="/feed/<%= blogs[i].blog_id %>"><%= blogs[i].title %> </a> </h3></td>
         <td style="padding:0 15px;"> <a href="/edit-blog/<%= blogs[i].blog_id %>" class="btn btn-primary">Edit</a></td>
         <td style="padding:0 15px;"> <a href="/delete-blog/<%= blogs[i].blog_id %>" class="btn btn-danger">Delete</a></td>
       </tr>
